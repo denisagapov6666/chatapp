@@ -7,6 +7,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 
     path('', include('core.urls')),
+    path('client', include('core.urls')),
 
     path('login/', auth_views.LoginView.as_view(), name='login'),
      
